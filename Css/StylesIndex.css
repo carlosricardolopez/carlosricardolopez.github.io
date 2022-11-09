@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #333333;
+    border-left: 1px solid #555555;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: dodgerblue;
+    border-radius: 15px;
+}
+header{
+    width: 100%;
+    height: 650px;
+    background-image: url(../Imagenes/Fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ContenidoHeader{
+    text-align: center;
+}
+#ContenidoHeader h1{
+    font-size: 50px;
+    text-shadow: 0px 0px 1px white,
+                 0px 0px 2px white,
+                 0px 0px 2px white;
+}
+#ContenidoHeader a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 15px 5px 15px;
+    background-color: dodgerblue;
+    color: white;
+    box-shadow: 0px 0px 2px black;
+}
+section{
+    width: 100%;
+}
+.Subpaginas{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #333333;
+    color: white;
+    padding: 8px 15px 8px 15px;
+}
+.Contenido{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Contenido .Img{
+    width: 50%;
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Contenido:nth-child(1) .Img{
+    background-image: url(../Imagenes/Fondo3.png);
+    background-size: contain;
+}
+.Contenido:nth-child(2) .Img{
+    background-image: url(../Imagenes/Fondo4.jpeg);
+    background-size: calc(150%);
+
+}
+.Contenido:nth-child(3) .Img{
+    background-image: url(../Imagenes/img.png);
+    background-size: calc(90%);
+}
+.Contenido .Texto{
+    width: 50%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Contenido .Texto h2{
+    font-size: 30px;
+    padding: 0px 25px 0px 25px;
+}
+.Contenido:nth-child(1) .Texto h2{
+    color: darkturquoise;
+}
+.Contenido:nth-child(2) .Texto h2{
+    color: royalblue;
+}
+.Contenido:nth-child(3) .Texto h2{
+    color: orangered;
+}
+.Contenido .Texto p{
+    font-size: 20px;
+    color: #333333;
+    padding: 0px 25px 0px 25px;
+    text-align: justify;
+}
+@media only screen and (max-width: 610px) {
+    .Contenido .Img{
+        width: 100%;
+    }
+    .Contenido .Texto{
+        width: 100%;
+        text-align: center;
+        padding: 15px 25px 15px 25px;
+        height: max-content;
+    }
+    .Contenido .Texto h2{
+        padding: 0px 10px 0px 10px;
+        color: darkturquoise;
+    }
+    .Contenido:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .Contenido:nth-child(2) .Texto{
+        width: 89%;
+    }
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}

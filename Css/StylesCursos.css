@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #333333;
+    border-left: 1px solid #555555;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: dodgerblue;
+    border-radius: 15px;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header a{
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px 5px 15px;
+    left: 15px;
+}
+header h2{
+    color: white;
+    font-weight: 500;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Contenido{
+    margin: 20px;
+    border-radius: 10px;
+    width: 95%;
+    border: 1px solid #333333;
+}
+.Contenido_Tabla{
+    border-bottom: 1px solid #333333;
+    transition: 0.5s;
+}
+.Contenido_Tabla:nth-child(1):hover{
+    background-color: white;
+    color: black;
+}
+.Contenido_Tabla:hover{
+    background-color: #123d5b;
+    color: white;
+}
+.Contenido_Tabla:nth-child(1) td{
+    font-weight: 700;
+    font-size: 19px;
+    text-align: left;
+    padding-left: 15px;
+}
+.Contenido_Tabla td{
+    padding: 10px 0px 10px 0px;
+    font-size: 18px;
+    border-bottom: 1px solid #333333;
+    text-align: center;
+}
+.Enlace a{
+    text-decoration: none;
+    background-color: forestgreen;
+    color: white;
+    padding: 5px 12px 5px 12px;
+    text-align: center;
+}
