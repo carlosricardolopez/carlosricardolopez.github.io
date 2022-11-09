@@ -37,6 +37,16 @@ header h2{
     color: white;
     font-weight: 500;
 }
+@media only screen and (max-width: 500px) {
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    header a{
+        position: relative;
+    }
+}
 section{
     width: 100%;
     display: flex;
@@ -79,4 +89,20 @@ section{
     color: white;
     padding: 5px 12px 5px 12px;
     text-align: center;
+}
+@media only screen and (max-width: 500px) {
+    #Contenido{
+        margin: 0px;
+        width: 100%;
+        border: hidden;
+    }
+    .Contenido_Tabla td{
+        font-size: 17px;
+    }
+    .Contenido_Tabla td:nth-child(1){
+        width: 100px;
+    }
+    .Contenido_Tabla td:nth-child(3){
+        display: none;
+    }
 }
